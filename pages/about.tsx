@@ -5,11 +5,11 @@ export const About = (): JSX.Element => {
   return (
     <Layout
       customMeta={{
-        title: 'About - Hunter Chang',
+        title: 'Projects - Énio Carlos',
       }}
     >
-      <h1>About Page</h1>
-      <p>Welcome to the about page</p>
+      <h1>Explore Some of My Projects</h1>
+      <p>These are personal projects so feel free to reach out and ask about anything if you have questions 😎</p>
     </Layout>
   );
 };

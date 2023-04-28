@@ -8,7 +8,7 @@ const Navigation = (): JSX.Element => {
         <a className="text-gray-900 dark:text-white pr-6 py-4">Home</a>
       </Link>
       <Link href="/about">
-        <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
+        <a className="text-gray-900 dark:text-white px-6 py-4">Projects</a>
       </Link>
     </nav>
   );
