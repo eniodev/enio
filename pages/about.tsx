@@ -8,8 +8,8 @@ export const About = (): JSX.Element => {
         title: 'Projects - Énio Carlos',
       }}
     >
-      <h1>Explore Some of My Projects</h1>
-      <p>These are personal projects so feel free to reach out and ask about anything if you have questions 😎</p>
+      <h1>🏗️</h1>
+      <p>I've been building...</p>
     </Layout>
   );
 };
