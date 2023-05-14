@@ -9,7 +9,7 @@ export const About = (): JSX.Element => {
       }}
     >
       <h1>🏗️</h1>
-      <p>I've been building...</p>
+      <p>I&apos;ve been building...</p>
     </Layout>
   );
 };
