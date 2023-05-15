@@ -41,11 +41,13 @@ So, as we can see, we have a very simple scheme here. Okay, and how are data sen
 
 ## Web meets The Internet 
 
-The internet is capable of connecting devices at any distance and at a fair price (*protocols*), so the web looks at this and says: "why not use this?". With the help of protocols, the internet ensures that computers communicate, and its architecture is based on the TCP/IP network model, ensuring reliability and scalability because unlike the UDP (Unified Datagram Protocol), TCP (Transfer Control Protocol) cares about establishing a connection between the sender and the receiver before sending the information and thus ensures the delivery of data.
+The internet is capable of connecting devices at any distance and at a fair price (*protocols*), so the web looks at this and says: "why not use this?". 
+
+With the help of protocols, the internet ensures that computers communicate, and its architecture is based on the TCP/IP network model, ensuring reliability and scalability because unlike the UDP (Unified Datagram Protocol), TCP (Transfer Control Protocol) cares about establishing a connection between the sender and the receiver before sending the information and thus ensures the delivery of data.
 
 We can think of *protocols* with the following analogy:
 
-Imagine a room with students from different parts of the world who have different native languages. Would it be possible for them to communicate? Well, in the best of chances where each student, in addition to their own language, knows the rest of the grid of languages spoken in the room, yes, it would be possible.
+Imagine a room with students from different parts of the world who have different native languages. Would it be possible for them to communicate? Well, in the best of chances where each student, in addition to their own language knows the rest of the grid of languages spoken in the room, yes, it would be possible.
 
 But how costly would that be? And what if a new student appeared who only knows their native language? That wouldn't work. So now imagine the school puts a criterion that says only English is spoken within the school, which is a language that everyone knows? Much better, right? This would ensure that everyone understood each other, in a fluent communication.
 
@@ -122,14 +124,14 @@ Accept: application/json
 After receiving the request, the server processes the request and sends a response to the client in a data block with the same structure, but containing the response information.
 
 1. ### Start Line
-    a. Contains the protocol version, followed by the response code and a short descriptive message.
+       Contains the protocol version, followed by the response code and a short descriptive message.
 
 ```jsx
 HTTP/1.1 200 OK
 ```
 
 2. ### Headers
-    a. Contains information related to the response, such as resource type and size.
+       Contains information related to the response, such as resource type and size.
 
 ```jsx
 Content-Type: application/json
@@ -137,7 +139,7 @@ Content-Length: 56
 ```
 
 3. ### Body
-    a. As with the request, this is where the requested resource is located.
+       As with the request, this is where the requested resource is located.
 
 ```jsx
 {"id": "123", "name": "John Doe", "email": "johndoe@example.com"}
