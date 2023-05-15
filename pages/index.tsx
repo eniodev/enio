@@ -24,7 +24,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 
       <a
         href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-blue-300 hover:bg-blue-500 hover:text-white dark:hover:text-white"
+        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-black-200 hover:bg-black-300 hover:text-white dark:hover:text-white"
       >
         Resume 📄
       </a>
