@@ -1,10 +1,10 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
-import { POSTS_PATH } from '../utils/mdxUtils';
+import { POSTS_PATH, PROJECTS_PATH } from '../utils/mdxUtils';
 
 export function getPostSlugs(): string[] {
-  return fs.readdirSync(POSTS_PATH);
+  return fs.readdirSync(PROJECTS_PATH);
 }
 
 type PostItems = {
@@ -13,7 +13,7 @@ type PostItems = {
 
 export function getPostBySlug(slug: string, fields: string[] = []): PostItems {
   const realSlug = slug.replace(/\.mdx$/, '');
-  const fullPath = join(POSTS_PATH, `${realSlug}.mdx`);
+  const fullPath = join(PROJECTS_PATH, `${realSlug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
