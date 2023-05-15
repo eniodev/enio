@@ -26,7 +26,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
         href="https://twitter.com/eniocarlosao"
         className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white"
       >
-        → Let's talk 👋🏿
+        → Let&apos;s talk 👋🏿
       </a>
 
       {posts.map((post) => (
