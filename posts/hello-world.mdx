@@ -4,15 +4,17 @@ description: That's why you always leave a note! I hear the jury's still out on 
 date: '2021-03-10'
 ---
 
-"Mom, I can't sleep."
+*"Mom, I can't sleep."
 
-- "Well, maybe you should try reading a book instead of being on the internet all day."
+\- "Well, maybe you should try reading a book instead of being on the internet all day."*
 
 You've probably witnessed a similar scene at home or elsewhere, all thanks to the darn internet. But hold on, is "darn" really the right word to describe it?
 
 Hmm... let's see, the internet has become a crucial element in people's daily lives, and that's indisputable because we're aware of the value it provides, from instant communication to serving as a second brain for many, no one needs to memorize anything anymore because "it's all on the internet" and available at all times.
 
 But that's what everyone already knows, everyone knows how to use the internet, but as a web developer, that's not enough for you. You need to understand how everything works behind the scenes in order to create scalable, reliable, and high-performance software. Everyone knows how to eat cake, but making it? That's your job to know.
+
+## Internet vs WWW
 
 First and foremost, let's clarify a point as simple as it is important: Is the internet the same thing as the web?
 
@@ -21,6 +23,8 @@ NO! The internet is not the web, it's not just that. On the contrary, the web (w
 The internet is simply the largest network of connected computers around the globe, and the web is an information system combined with a set of technologies that aims to share resources and uses the internet infrastructure for transmission.
 
 So, we can move on to what the web architecture is. How does the web work?
+
+## The Web
 
 Designed to be simple, reliable, and scalable, the web's architecture is summarized in two main elements:
 
@@ -35,21 +39,25 @@ Designed to be simple, reliable, and scalable, the web's architecture is summari
 
 So, as we can see, we have a very simple scheme here. Okay, and how are data sent back and forth? How do we know what the client requested? Which client requested what? And if it really received a response? This is where the internet comes in!
 
-The internet is capable of connecting devices at any distance and at a fair price (protocols), so the web looks at this and says: "why not use this?". With the help of protocols, the internet ensures that computers communicate, and its architecture is based on the TCP/IP network model, ensuring reliability and scalability because unlike the UDP (Unified Datagram Protocol), TCP (Transfer Control Protocol) cares about establishing a connection between the sender and the receiver before sending the information and thus ensures the delivery of data.
+## Web meets The Internet 
 
-We can think of protocols with the following analogy:
+The internet is capable of connecting devices at any distance and at a fair price (*protocols*), so the web looks at this and says: "why not use this?". With the help of protocols, the internet ensures that computers communicate, and its architecture is based on the TCP/IP network model, ensuring reliability and scalability because unlike the UDP (Unified Datagram Protocol), TCP (Transfer Control Protocol) cares about establishing a connection between the sender and the receiver before sending the information and thus ensures the delivery of data.
+
+We can think of *protocols* with the following analogy:
 
 Imagine a room with students from different parts of the world who have different native languages. Would it be possible for them to communicate? Well, in the best of chances where each student, in addition to their own language, knows the rest of the grid of languages spoken in the room, yes, it would be possible.
 
 But how costly would that be? And what if a new student appeared who only knows their native language? That wouldn't work. So now imagine the school puts a criterion that says only English is spoken within the school, which is a language that everyone knows? Much better, right? This would ensure that everyone understood each other, in a fluent communication.
 
-A protocol is exactly that, a rule established for the success of a particular interaction, which in this case is communication.
+A **protocol** is exactly that, a rule established for the success of a particular interaction, which in this case is communication.
 
 Therefore, the final scheme of the web would look like this:
 
 Client → Internet → Server
 
 Having this scheme, we can move on to how these resources actually travel back and forth. Although the web uses the TCP/IP structure of the internet, it has its own protocol for carrying information: HTTP.
+
+## HTTP
 
 The Hypertext Transfer Protocol is the primary protocol used for resource transfer between clients and servers. It is encapsulated by TCP/IP to carry the information.
 
@@ -64,11 +72,13 @@ The communication flow between the client and the server becomes as follows:
 
 1. The connection between the client and the server is stateless in HTTP, meaning that each request is independent and no history is recorded. This allows the server to handle multiple requests simultaneously without worrying about the client, a factor that enhances scalability.
 2. The connection can be closed on the client or server side.
-    1. Closed on the server side: It can be due to successful completion of the interaction, or internal error, such as a software error or overload, thus issuing an error code to the client.
-    2. Closed on the client side: It can be for several reasons such as network error or the receipt of a complete response, in which case no error is issued.
-    3. The process of request (from the client to the server) and response (from the server to the client) is called a transaction. A transaction is made using data blocks, called HTTP Messages, that is, requests and responses are HTTP messages.
+    a. Closed on the server side: It can be due to successful completion of the interaction, or internal error, such as a software error or overload, thus issuing an error code to the client.
+    b. Closed on the client side: It can be for several reasons such as network error or the receipt of a complete response, in which case no error is issued.
+    c. The process of request (from the client to the server) and response (from the server to the client) is called a transaction. A transaction is made using data blocks, called HTTP Messages, that is, requests and responses are HTTP messages.
 
 Okay, but how does this work in practice? How is an HTTP request made?
+
+### HTTP Messages
 
 An HTTP request consists of a data block with 3 parts:
 
@@ -167,11 +177,15 @@ Here are some famous response codes:
 
 404 - 
 
+## MIME Types
+
 And now, what about the resource type definition? Resources are stored on the server, and it can be difficult for the server to understand which resource the client wants if the type is not specified. What would happen if I had the files party.mp3 and party.png on the server, but the request only said that I want the file 'party'? How would the server handle this?
 
 Thinking about situations like this, the HTTP protocol uses a tagging system called MIME type.
 
 Multipurpose Internet Mail Extensions (MIME) was adopted by HTTP after serving as the ideal solution to the problem of exchanging messages between different email systems. Therefore, servers place a MIME tag on every resource before sending it to the client.
+
+## URI: URL vs URN
 
 Last but not least, it's important to know how resources are addressed on the server, and for that, the Web uses URI technology.
 
