@@ -159,15 +159,15 @@ The purpose of the request is defined by using HTTP methods. Every HTTP request 
 
 Here are the most famous HTTP methods:
 
-GET - used to retrieve data from a specified resource. It is a safe and idempotent method, meaning it should not have any side effects on the server and can be called multiple times without changing the result.
+**GET** - used to retrieve data from a specified resource. It is a safe and idempotent method, meaning it should not have any side effects on the server and can be called multiple times without changing the result.
 
-POST - used to submit data to be processed to a specified resource. It is commonly used to create new resources on the server.
+**POST** - used to submit data to be processed to a specified resource. It is commonly used to create new resources on the server.
 
-PUT - used to update or replace an existing resource with new data. It replaces the entire resource with the new representation provided in the request.
+**PUT** - used to update or replace an existing resource with new data. It replaces the entire resource with the new representation provided in the request.
 
-DELETE - used to delete a specified resource. It removes the specified resource from the server.
+**DELETE** - used to delete a specified resource. It removes the specified resource from the server.
 
-HEAD - similar to the GET method, but it only retrieves the headers of a response without the actual body content. It is often used to check the status or metadata of a resource without transferring the entire response.
+**HEAD** - similar to the GET method, but it only retrieves the headers of a response without the actual body content. It is often used to check the status or metadata of a resource without transferring the entire response.
 
 ### HTTP Response Codes
 
@@ -177,15 +177,15 @@ As for response codes, they are 3-digit numbers used by the server to inform the
 
 Here are some famous response codes:
 
-302 - this is a redirection response. It indicates that the requested resource has been temporarily moved to a different location. The client should typically follow the redirection and make a new request to the provided location.
+**302** - this is a redirection response. It indicates that the requested resource has been temporarily moved to a different location. The client should typically follow the redirection and make a new request to the provided location.
 
-404 - indicates that the requested resource could not be found on the server. It means that the server was unable to locate the requested resource, often because it does not exist or the URL is incorrect.
+**404** - indicates that the requested resource could not be found on the server. It means that the server was unable to locate the requested resource, often because it does not exist or the URL is incorrect.
 
-500 - represents an internal server error. It indicates that an unexpected error occurred on the server, and the request could not be completed. This status code is typically used for server-side errors that are not caused by the client.
+**500** - represents an internal server error. It indicates that an unexpected error occurred on the server, and the request could not be completed. This status code is typically used for server-side errors that are not caused by the client.
 
-401 - indicates that the client request requires authentication. It means that the client must provide valid credentials (such as a username and password) to access the requested resource.
+**401** - indicates that the client request requires authentication. It means that the client must provide valid credentials (such as a username and password) to access the requested resource.
 
-503 - indicates that the server is temporarily unavailable or overloaded. It is often used for server maintenance or when the server cannot handle the current request load.
+**503** - indicates that the server is temporarily unavailable or overloaded. It is often used for server maintenance or when the server cannot handle the current request load.
 
 
 ## MIME Types
