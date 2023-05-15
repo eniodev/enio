@@ -4,9 +4,9 @@ description: That's why you always leave a note! I hear the jury's still out on 
 date: '2021-03-10'
 ---
 
-*"Mom, I can't sleep."
+*"Mom, I can't sleep."*
 
-\- "Well, maybe you should try reading a book instead of being on the internet all day."*
+\- *"Well, maybe you should try reading a book instead of being on the internet all day."*
 
 You've probably witnessed a similar scene at home or elsewhere, all thanks to the darn internet. But hold on, is "darn" really the right word to describe it?
 
@@ -145,11 +145,11 @@ Content-Length: 56
 
 Probably some questions arise from this, such as:
 
-. How do I define the purpose of the request?
+\- How do I define the purpose of the request?
 
-. What are response codes?
+\- What are response codes?
 
-. How do I define the resource type?
+\- How do I define the resource type?
 
 The purpose of the request is defined by using HTTP methods. Every HTTP request must contain a method because it tells the server what action to take (e.g. get resource, delete, run an application, etc.).
 
@@ -179,7 +179,9 @@ Here are some famous response codes:
 
 ## MIME Types
 
-And now, what about the resource type definition? Resources are stored on the server, and it can be difficult for the server to understand which resource the client wants if the type is not specified. What would happen if I had the files party.mp3 and party.png on the server, but the request only said that I want the file 'party'? How would the server handle this?
+And now, what about the resource type definition? Resources are stored on the server, and it can be difficult for the server to understand which resource the client wants if the type is not specified. 
+
+What would happen if I had the files party.mp3 and party.png on the server, but the request only said that I want the file 'party'? How would the server handle this?
 
 Thinking about situations like this, the HTTP protocol uses a tagging system called MIME type.
 
