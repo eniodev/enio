@@ -27,7 +27,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
         </span>  
-        <a href="https://twitter.com/eniocarlosao" className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white">→ Let&apos;s talk 👋🏿</a>
+        <a href="https://twitter.com/eniocarlosao" className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white">→ <i>Let&apos;s talk 👋🏿</i></a>
     </div>
 
 
