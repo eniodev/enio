@@ -14,7 +14,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <h1>Énio Carlos</h1>
-      <p>Software Engineer & Automation Enthusiast 👨🏿‍💻 HTTP Evangelist 📣 with 2 years of practical experience in Web 🌐 & Mobile 📱 Development.</p>
+      <p>Software Engineer & Automation Enthusiast 👨🏿‍💻 HTTP Evangelist 📣 Building on Web 🌐 & Mobile 📱</p>
       <ul className="list-disc pl-4 my-6">
         <li>React</li>
         <li className="mt-2">React Native</li>
@@ -24,7 +24,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 
       <a
         href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-blue-600 hover:bg-blue-700 hover:text-white dark:hover:text-white"
+        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-blue-300 hover:bg-blue-500 hover:text-white dark:hover:text-white"
       >
         Resume 📄
       </a>
