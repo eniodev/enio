@@ -14,7 +14,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <h1>Énio Carlos</h1>
-      <p>Software Engineer & Automation Enthusiast 👨🏿‍💻 HTTP Evangelist 📣 Building on Web 🌐 & Mobile 📱</p>
+      <p>Software Engineer & Automation Enthusiast 👨🏿‍💻 HTTP Evangelist 📣 Building on the Web 🌐 & Mobile 📱</p>
       <ul className="list-disc pl-4 my-6">
         <li>React</li>
         <li className="mt-2">React Native</li>
