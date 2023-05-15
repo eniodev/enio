@@ -204,16 +204,23 @@ Last but not least, it's important to know how resources are addressed on the se
 
 Uniform Resource Identifier, or simply URI, as the name suggests, is a way to uniquely identify a resource so that the client can know how to reach it, much like the address of someone's house, from which you know how to find them.
 
-For example, [http://home.com/bedroom/table/paper.txt](http://home.com/bedroom/table/paper.txt) shows how the URI would look to access the resource paper.txt.
+For example, 
+```jsx
+http://home.com/bedroom/table/paper.txtn
+```
+shows how the URI would look to access the resource paper.txt.
 
 But isn't that a URL? An interesting question...
 
 There are two types of URI, namely the well-known Uniform Resource Locator (URL) and the not so well-known Uniform Resource Name (URN).
 
-[http://home.com/bedroom/table/paper.txt](http://home.com/bedroom/table/paper.txt) is indeed a URL. URLs are made up of three parts:
+```jsx
+http://home.com/bedroom/table/paper.txtn
+```
+is indeed a URL. URLs are made up of three parts:
 
 1. **Schema**: http:// (Defines the protocol to be used to access the resource)
-2. **Domain/IP**: [home.com](http://home.com/) (Defines where to look for the resource)
+2. **Domain/IP**: home.com (Defines where to look for the resource)
 3. **The rest of the location**: /bedroom/table/paper.txt (Defines the exact path to reach the resource)
 
 On the other hand, we have URN, with a very different approach. This technology relies on unique names for resources on the web, independent of their location, and allows these resources to be passed from server to server while maintaining the same name.
