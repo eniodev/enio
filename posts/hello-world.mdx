@@ -1,9 +1,8 @@
 ---
-title: # Www For Developers, simple as that!
+title: Www For Developers, simple as that!
 description: That's why you always leave a note! I hear the jury's still out on science. Did you enjoy your meal, Mom? You drank it fast enough. I'm half machine. I'm a monster. We just call it a sausage.
 date: '2021-03-10'
 ---
-# Www For Developers, simple as that!
 
 "Mom, I can't sleep."
 
@@ -81,6 +80,128 @@ Start Line
 
 Area where it is specified what is intended to be done, what is the objective of this request, accompanied by the path to the resource (remember that the objective of the web is sharing resources?), and the protocol version.
 
-```jsx:hello-world.jsx
+```c
 GET /api/users/123 HTTP/1.1
 ```
+
+Headers
+
+Area where all important information for handling the resource itself is specified, such as the type of resource (e.g. text, video), language preference, host information, and so on.
+
+```jsx
+Host: example.com
+Accept: application/json
+```
+
+Body
+
+This is where the real resource is located. Note that this is an optional field because not every request needs a body.
+
+```jsx
+N/A //i don't need a body in this case
+```
+
+So in the end, an HTTP request is this:
+
+```jsx
+GET /api/users/123 HTTP/1.1
+Host: example.com
+Accept: application/json
+```
+
+After receiving the request, the server processes the request and sends a response to the client in a data block with the same structure, but containing the response information.
+
+1. Start Line
+    1. Contains the protocol version, followed by the response code and a short descriptive message.
+
+```jsx
+HTTP/1.1 200 OK
+```
+
+1. Headers
+    1. Contains information related to the response, such as resource type and size.
+
+```jsx
+Content-Type: application/json
+Content-Length: 56
+```
+
+1. Body
+    1. As with the request, this is where the requested resource is located.
+
+```jsx
+{"id": "123", "name": "John Doe", "email": "johndoe@example.com"}
+```
+
+Probably some questions arise from this, such as:
+
+. How do I define the purpose of the request?
+
+. What are response codes?
+
+. How do I define the resource type?
+
+The purpose of the request is defined by using HTTP methods. Every HTTP request must contain a method because it tells the server what action to take (e.g. get resource, delete, run an application, etc.).
+
+Here are the most famous HTTP methods:
+
+GET -
+
+POST -
+
+PUT -
+
+DELETE -
+
+HEAD -
+
+As for response codes, they are 3-digit numbers used by the server to inform the client of the status of the request. It is important to note that it is by the code that the client interprets the status of the response, not the descriptive message. Therefore:
+
+200 ok = 200 let's go!
+
+Here are some famous response codes:
+
+200 -
+
+302 -
+
+404 - 
+
+And now, what about the resource type definition? Resources are stored on the server, and it can be difficult for the server to understand which resource the client wants if the type is not specified. What would happen if I had the files party.mp3 and party.png on the server, but the request only said that I want the file 'party'? How would the server handle this?
+
+Thinking about situations like this, the HTTP protocol uses a tagging system called MIME type.
+
+Multipurpose Internet Mail Extensions (MIME) was adopted by HTTP after serving as the ideal solution to the problem of exchanging messages between different email systems. Therefore, servers place a MIME tag on every resource before sending it to the client.
+
+Last but not least, it's important to know how resources are addressed on the server, and for that, the Web uses URI technology.
+
+Uniform Resource Identifier, or simply URI, as the name suggests, is a way to uniquely identify a resource so that the client can know how to reach it, much like the address of someone's house, from which you know how to find them.
+
+For example, [http://home.com/bedroom/table/paper.txt](http://home.com/bedroom/table/paper.txt) shows how the URI would look to access the resource paper.txt.
+
+But isn't that a URL? An interesting question...
+
+There are two types of URI, namely the well-known Uniform Resource Locator (URL) and the not so well-known Uniform Resource Name (URN).
+
+[http://home.com/bedroom/table/paper.txt](http://home.com/bedroom/table/paper.txt) is indeed a URL. URLs are made up of three parts:
+
+1. Schema: http:// (Defines the protocol to be used to access the resource)
+2. Domain/IP: [home.com](http://home.com/) (Defines where to look for the resource)
+3. The rest of the location: /bedroom/table/paper.txt (Defines the exact path to reach the resource)
+
+On the other hand, we have URN, with a very different approach. This technology relies on unique names for resources on the web, independent of their location, and allows these resources to be passed from server to server while maintaining the same name.
+
+For example, urn:example:home.com:bedroom:table:paper.txt.
+
+URNs ended up being less used than URLs due to the lack of standardization and a structure to support them. However, they are still used for specific situations, such as the International Standard Book Number (ISBN) or the Digital Object Identifier (DOI), a type of URN commonly used to identify scientific articles.
+
+Therefore, most browsers were designed to work primarily with URLs.
+
+Keeping all of this in mind, it's easy to see how simple the architecture of the Web is and has always been intended to be, just a conversation happening behind the scenes at the end of the day, nothing scary.
+
+Knowing how it works is the first step for you as a web developer to understand how to design and develop reliable, functional, and scalable systems on the web.
+
+Thank you very much for reading the article, I hope it has added something to you.
+
+Feel free to contact [énio], whether to discuss the article or just to say hello!
+
