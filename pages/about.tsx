@@ -8,6 +8,7 @@ import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
+import { PROJECTS_PATH } from '../utils/mdxUtils';
 
 type IndexProps = {
   posts: PostType[];
@@ -50,7 +51,7 @@ export const About = ({ posts }: IndexProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
+  const posts = getAllPosts(['date', 'description', 'slug', 'title'], PROJECTS_PATH);
 
   return {
     props: { posts },

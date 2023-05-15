@@ -5,6 +5,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 import { PostType } from '../types/post';
+import { POSTS_PATH } from '../utils/mdxUtils';
 
 type IndexProps = {
   posts: PostType[];
@@ -56,7 +57,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = getAllPosts(['date', 'description', 'slug', 'title']);
+  const posts = getAllPosts(['date', 'description', 'slug', 'title'], POSTS_PATH);
 
   return {
     props: { posts },
