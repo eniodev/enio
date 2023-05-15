@@ -1,6 +1,6 @@
 ---
 title: Www For Developers, simple as that!
-description: That's why you always leave a note! I hear the jury's still out on science. Did you enjoy your meal, Mom? You drank it fast enough. I'm half machine. I'm a monster. We just call it a sausage.
+description: Demystifying: Understanding Web Architecture, Communication Flow, Protocols, HTTP Messages, MIME Types, and URIs. Simple concepts that have always meant to be.
 date: '2021-03-10'
 ---
 
@@ -195,6 +195,11 @@ And now, what about the resource type definition? Resources are stored on the se
 What would happen if I had the files party.mp3 and party.png on the server, but the request only said that I want the file 'party'? How would the server handle this?
 
 Thinking about situations like this, the HTTP protocol uses a tagging system called MIME type.
+
+```jsx
+Content-Type: application/json //This is the MIME Type for JSON responses
+Content-Length: 56
+```
 
 Multipurpose Internet Mail Extensions (MIME) was adopted by HTTP after serving as the ideal solution to the problem of exchanging messages between different email systems. Therefore, servers place a MIME tag on every resource before sending it to the client.
 
