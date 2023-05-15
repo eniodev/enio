@@ -74,9 +74,9 @@ The communication flow between the client and the server becomes as follows:
 
 1. The connection between the client and the server is stateless in HTTP, meaning that each request is independent and no history is recorded. This allows the server to handle multiple requests simultaneously without worrying about the client, a factor that enhances scalability.
 2. The connection can be closed on the client or server side.
-    a. Closed on the server side: It can be due to successful completion of the interaction, or internal error, such as a software error or overload, thus issuing an error code to the client.
-    b. Closed on the client side: It can be for several reasons such as network error or the receipt of a complete response, in which case no error is issued.
-    c. The process of request (from the client to the server) and response (from the server to the client) is called a transaction. A transaction is made using data blocks, called HTTP Messages, that is, requests and responses are HTTP messages.
+    1. Closed on the server side: It can be due to successful completion of the interaction, or internal error, such as a software error or overload, thus issuing an error code to the client.
+    2. Closed on the client side: It can be for several reasons such as network error or the receipt of a complete response, in which case no error is issued.
+    3. The process of request (from the client to the server) and response (from the server to the client) is called a transaction. A transaction is made using data blocks, called HTTP Messages, that is, requests and responses are HTTP messages.
 
 Okay, but how does this work in practice? How is an HTTP request made?
 
