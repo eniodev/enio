@@ -23,10 +23,10 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       </ul>
 
       <a
-        href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-black-200 hover:bg-black-300 hover:text-white dark:hover:text-white"
+        href="https://twitter.com/eniocarlosao"
+        className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white"
       >
-        Resume 📄
+        → Let's talk 👋🏿
       </a>
 
       {posts.map((post) => (
