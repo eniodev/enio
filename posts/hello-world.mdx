@@ -60,7 +60,7 @@ The communication flow between the client and the server becomes as follows:
 3. Server sends the HTTP request response to the client
 4. Server terminates the connection
 
-Important points:
+### Important points:
 
 1. The connection between the client and the server is stateless in HTTP, meaning that each request is independent and no history is recorded. This allows the server to handle multiple requests simultaneously without worrying about the client, a factor that enhances scalability.
 2. The connection can be closed on the client or server side.
@@ -76,7 +76,7 @@ An HTTP request consists of a data block with 3 parts:
 2. Headers
 3. Body
 
-Start Line
+### Start Line
 
 Area where it is specified what is intended to be done, what is the objective of this request, accompanied by the path to the resource (remember that the objective of the web is sharing resources?), and the protocol version.
 
@@ -84,7 +84,7 @@ Area where it is specified what is intended to be done, what is the objective of
 GET /api/users/123 HTTP/1.1
 ```
 
-Headers
+### Headers
 
 Area where all important information for handling the resource itself is specified, such as the type of resource (e.g. text, video), language preference, host information, and so on.
 
@@ -93,7 +93,7 @@ Host: example.com
 Accept: application/json
 ```
 
-Body
+### Body
 
 This is where the real resource is located. Note that this is an optional field because not every request needs a body.
 
@@ -111,23 +111,23 @@ Accept: application/json
 
 After receiving the request, the server processes the request and sends a response to the client in a data block with the same structure, but containing the response information.
 
-1. Start Line
-    1. Contains the protocol version, followed by the response code and a short descriptive message.
+1. ### Start Line
+    a. Contains the protocol version, followed by the response code and a short descriptive message.
 
 ```jsx
 HTTP/1.1 200 OK
 ```
 
-1. Headers
-    1. Contains information related to the response, such as resource type and size.
+2. ### Headers
+    a. Contains information related to the response, such as resource type and size.
 
 ```jsx
 Content-Type: application/json
 Content-Length: 56
 ```
 
-1. Body
-    1. As with the request, this is where the requested resource is located.
+3. ### Body
+    a. As with the request, this is where the requested resource is located.
 
 ```jsx
 {"id": "123", "name": "John Doe", "email": "johndoe@example.com"}
@@ -197,11 +197,13 @@ URNs ended up being less used than URLs due to the lack of standardization and a
 
 Therefore, most browsers were designed to work primarily with URLs.
 
+## Conclusion
+
 Keeping all of this in mind, it's easy to see how simple the architecture of the Web is and has always been intended to be, just a conversation happening behind the scenes at the end of the day, nothing scary.
 
 Knowing how it works is the first step for you as a web developer to understand how to design and develop reliable, functional, and scalable systems on the web.
 
 Thank you very much for reading the article, I hope it has added something to you.
 
-Feel free to contact [énio], whether to discuss the article or just to say hello!
+Feel free to contact [énio](https://twitter.com/eniocarlosao), whether to discuss the article or just to say hello!
 
