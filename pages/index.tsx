@@ -22,17 +22,14 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
         <li className="mt-2">TypeScript</li>
       </ul>
 
-      <a
-        href="https://twitter.com/eniocarlosao"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white"
-      >
-        → Let&apos;s talk 👋🏿
-      </a>
+      <div className="flex items-center justify-start">
+        <span className="relative flex h-3 w-3 ml-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+        </span>  
+        <a href="https://twitter.com/eniocarlosao" className="inline-block px-7 py-3 rounded-md text-white dark:text-white hover:text-white dark:hover:text-white">→ Let's talk 👋🏿</a>
+    </div>
 
-      <span className="relative flex h-3 w-3">
-  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-  <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-</span>
 
       {posts.map((post) => (
         <article key={post.slug} className="mt-12">
