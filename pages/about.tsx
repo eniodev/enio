@@ -30,7 +30,7 @@ export const About = ({ posts }: IndexProps): JSX.Element => {
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
           </p>
-          <h1 className="mb-2 text-xl">
+          <h1 className="mb-2 text-base">
             <Link as={`/projects/${post.slug}`} href={`/projects/[slug]`}>
               <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
                 {post.title}
@@ -38,11 +38,6 @@ export const About = ({ posts }: IndexProps): JSX.Element => {
             </Link>
           </h1>
           <p className="mb-3">{post.description}</p>
-          <p>
-            <Link as={`/projects/${post.slug}`} href={`/projects/[slug]`}>
-              <a>Read More</a>
-            </Link>
-          </p>
         </article>
       ))}
 
