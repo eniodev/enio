@@ -24,10 +24,10 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
         </div>
       </header>
       <main>
-        <div className="max-w-5xl lg:px-40 py-4 mx-auto md:px-8">{children}</div>
+        <div className="max-w-5xl lg:px-40 md:px-8 py-4 mx-auto ">{children}</div>
       </main>
       <footer className="py-8">
-     <div className="max-w-5xl lg:px-40 mx-auto md:px-8">
+     <div className="max-w-5xl lg:px-40 md:px-8 mx-auto ">
           Find me on {' '}
           <a
             className="text-gray-900 dark:text-white"
