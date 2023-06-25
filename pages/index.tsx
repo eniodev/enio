@@ -15,13 +15,24 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <h1>Énio Carlos</h1>
-      <p>Software Engineer & Automation Enthusiast 👨🏿‍💻 HTTP Evangelist 📣 Building on the Web 🌐 & Mobile 📱</p>
-      <ul className="list-disc pl-4 my-6">
+      <p>
+        Hi! I'm énio, a 21 y/o software engineer constantly breaking and building things.
+        I like <b>reading articles</b> at midnight, <b>explaining technical things</b>, and <b>building my own version</b> of things I'm trying to understand :] 
+
+      </p>
+      <p>Currently, I'm reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
+     {
+      /**
+      * 
+      * <ul className="list-disc pl-4 my-6">
         <li>React</li>
         <li className="mt-2">React Native</li>
         <li className="mt-2">Node</li>
         <li className="mt-2">TypeScript</li>
       </ul>
+      * 
+      */
+      } 
 
       <div className="flex items-center justify-start">
         <span className="relative flex h-3 w-3 ml-2">
