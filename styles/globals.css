@@ -13,14 +13,14 @@
     @apply mb-4;
   }
   a {
-    @apply text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300;
+    @apply underline ;
   }
 }
 
 /* Post styles */
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
+  @apply absolute invisible underline;
 
   margin-left: -1em;
   padding-right: 0.5em;
