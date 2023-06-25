@@ -16,11 +16,11 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
     <Layout>
       <h1>Énio Carlos</h1>
       <p>
-        Hi! I'm énio, a 21 y/o software engineer constantly breaking and building things.
-        I like <b>reading articles</b> at midnight, <b>explaining technical things</b>, and <b>building my own version</b> of things I'm trying to understand :] 
+        Hi! I&apos;m énio, a 21 y/o software engineer constantly breaking and building things.
+        I like <b>reading articles</b> at midnight, <b>explaining technical things</b>, and <b>building my own version</b> of things I&apos;m trying to understand :] 
 
       </p>
-      <p>Currently, I'm reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
+      <p>Currently, I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
      {
       /**
       * 
