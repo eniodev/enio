@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply text-[#262626]
-  }
+ 
   h1 {
     @apply mb-6 text-3xl font-semibold;
   }
@@ -16,7 +14,7 @@
     @apply mb-4;
   }
   a {
-    @apply underline underline-offset-4 text-[#1f1f1f];
+    @apply underline underline-offset-4;
   }
 }
 
