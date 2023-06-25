@@ -22,13 +22,13 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       </p>
       <p>Currently I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
 
-      <p className="text-xs mt-12 text-gray-500">Posts</p>
+      <p className="text-sm mt-12 text-gray-500">Posts</p>
       {posts.map((post) => (
         <article key={post.slug} className="mt-6">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
           </p>
-          <h1 className="mb-2 text-md underline text">
+          <h1 className="mb-2 text-sm underline decoration-skip-ink">
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
               <a className="text-gray-900 dark:text-white ">
                 {post.title}
@@ -36,7 +36,14 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
             </Link>
           </h1>
           <p className="mb-3">{post.description}</p>
-          
+         {/**
+          * 
+          * <p>
+            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+              <a>Read More</a>
+            </Link>
+          </p>
+          */} 
         </article>
       ))}
     </Layout>
