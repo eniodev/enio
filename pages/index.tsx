@@ -20,19 +20,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
         I like <b>reading articles</b> at midnight, <b>explaining technical things</b>, and <b>building my own version</b> of things I&apos;m trying to understand :] 
 
       </p>
-      <p>Currently, I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
-     {
-      /**
-      * 
-      * <ul className="list-disc pl-4 my-6">
-        <li>React</li>
-        <li className="mt-2">React Native</li>
-        <li className="mt-2">Node</li>
-        <li className="mt-2">TypeScript</li>
-      </ul>
-      * 
-      */
-      } 
+      <p>Currently I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
 
       <div className="flex items-center justify-start">
         <span className="relative flex h-3 w-3 ml-2">
