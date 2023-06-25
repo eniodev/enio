@@ -22,33 +22,21 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       </p>
       <p>Currently I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <b>mid</b> and learning how to invest.</p>
 
-      <div className="flex items-center justify-start">
-        <span className="relative flex h-3 w-3 ml-2">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-        </span>  
-        <a href="https://twitter.com/eniocarlosao" className="inline-block px-7 py-3 rounded-md dark:text-white hover:text-white dark:hover:text-white">→ <i>Let&apos;s talk 👋🏿</i></a>
-    </div>
-
-      <p className="text-sm mt-12 dark:text-gray-400">Posts</p>
+      <p className="text-xs mt-12 text-gray-500">Posts</p>
       {posts.map((post) => (
         <article key={post.slug} className="mt-6">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
           </p>
-          <h1 className="mb-2 text-xl">
+          <h1 className="mb-2 text-md underline text">
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
+              <a className="text-gray-900 dark:text-white ">
                 {post.title}
               </a>
             </Link>
           </h1>
           <p className="mb-3">{post.description}</p>
-          <p>
-            <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
-              <a>Read More</a>
-            </Link>
-          </p>
+          
         </article>
       ))}
     </Layout>
