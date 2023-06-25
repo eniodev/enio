@@ -20,7 +20,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
         I like <b>reading articles</b> at midnight, <b>explaining technical things</b>, and <b>building my own version</b> of things I&apos;m trying to understand :] 
 
       </p>
-      <p>Currently I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <Link><a href="https://github.com/eniodev/mid"><b>mid</b></a></Link> and learning how to invest.</p>
+      <p>Currently I&apos;m reading <i>HTTP, The Definitive Guide</i>, building <Link href="https://github.com/eniodev/mid"><a><b>mid</b></a></Link> and learning how to invest.</p>
 
       <p className="text-sm mt-12 text-gray-500">Posts</p>
       {posts.map((post) => (
