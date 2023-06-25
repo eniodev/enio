@@ -13,7 +13,7 @@
     @apply mb-4;
   }
   a {
-    @apply underline ;
+    @apply underline-offset-4;
   }
 }
 
